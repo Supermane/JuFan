@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/li_bg_splash"
+    tools:context=".welcome.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_90"
+        android:src="@mipmap/li_logo"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:src="@drawable/li_login_slogan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_70"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_wchat"
+            android:layout_weight="1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/li_icon_wx_normal"/>
+
+        <ImageView
+            android:id="@+id/login_qq"
+            android:layout_weight="1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/li_icon_qq_normal"/>
+
+        <ImageView
+            android:id="@+id/login_phone"
+            android:layout_weight="1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/li_icon_ph_normal"/>
+
+        <ImageView
+            android:id="@+id/login_sina"
+            android:layout_weight="1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/li_icon_wb_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="登录即代表您同意"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="聚范服务和隐私条例"/>
+    </LinearLayout>
+</RelativeLayout>

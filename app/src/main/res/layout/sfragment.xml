@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/li_home_search_left_bg"/>
+
+        <RadioGroup
+            android:id="@+id/shouye_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="关注"/>
+
+            <TextView
+                android:id="@+id/hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="热门"/>
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="最新"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/shouye_jiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/li_hoem_richlist_img"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shouye_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

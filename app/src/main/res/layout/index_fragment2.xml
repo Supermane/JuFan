@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hot_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:background="#DA445A"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_weight="1"
+                    android:text="填写推荐用户可以获得更多收益哦"/>
+
+                <TextView
+                    android:id="@+id/tishi"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="不再提示"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_125"
+                android:layout_marginTop="@dimen/dp_5"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/index_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_125"></android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/ll_dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"/>
+
+            </RelativeLayout>
+
+            <com.zhibo.jufan.view.MyListView
+                android:id="@+id/hot_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.zhibo.jufan.view.MyListView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

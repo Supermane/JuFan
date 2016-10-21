@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/giftimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/giftTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1钻"
+        android:textSize="15sp"
+        android:textColor="#f00"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/giftTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1经验值"
+        android:textSize="15sp"
+        android:textColor="#f00"/>
+</LinearLayout>

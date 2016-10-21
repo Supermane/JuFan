@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/shouye"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#D83A51"
+            android:layout_weight="1"
+            android:text="首页"
+            />
+
+        <ImageView
+            android:id="@+id/main_jia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:src="@drawable/li_maintab_party_pic_selected"
+            />
+
+        <RadioButton
+            android:id="@+id/main_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/my"
+            android:button="@null"
+            android:textColor="#D83A51"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="我的"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

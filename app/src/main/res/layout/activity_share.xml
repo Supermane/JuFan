@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/room_live_start_bg"
+    tools:context=".activity.ShareActivity">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp_45"
+        android:layout_marginRight="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_128"
+        android:hint="写个直播标题可以吸引更多用户"
+        android:textColor="#fff"/>
+
+    <RadioGroup
+        android:layout_below="@id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/weixin"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/pengyouquan"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sina"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/kongjian"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/qq"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始直播"
+        android:textColor="#fff"
+        android:background="@drawable/li_bg_attention_list_empty_center"
+        android:id="@+id/button"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:src="@drawable/li_btn_room_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_marginTop="@dimen/dp_26"/>
+
+</RelativeLayout>
